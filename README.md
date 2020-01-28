@@ -14,5 +14,5 @@ Recipes for common components and interactions implemented in SwiftUI.
 
 ## Adding New Components
 
-1. Create a SwiftUI View and add include the file in the **Recipes** folder.
+1. Create a SwiftUI View and include the file in the **Recipes** folder.
 2. Update **Recipe.swift** to include new recipe and associated data.

@@ -15,11 +15,11 @@ Recipes for common components and interactions implemented in SwiftUI.
 
   Draggable component using shape primitive and gesture modifier.
 
-- **DragSpring** - DragSpring
+- **Drag Spring** - DragSpring
 
   Draggable component using shape primitive and gesture modifier.
 
-- **PopUp** - PopUp
+- **Pop Up** - PopUp
 
   Button with submenu buttons.
 

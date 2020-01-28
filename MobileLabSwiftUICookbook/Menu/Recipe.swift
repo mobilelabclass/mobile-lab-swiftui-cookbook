@@ -32,12 +32,12 @@ enum Recipe: String, CaseIterable, Identifiable {
             
         case .drag:
             return Data("Drag",
-                        "A drag view.",
+                        "Draggable component using shape primitive and gesture modifier.",
                         { AnyView(Drag()) })
             
         case .dragSpring:
             return Data("Drag Spring",
-                        "A drag view with spring animation.",
+                        "Draggable component using spring animation.",
                         { AnyView(DragSpring()) })
             
         case .popUp:

@@ -7,9 +7,9 @@ Recipes for common components and interactions implemented in SwiftUI.
 
   Basic Text component. Similar to a basic UILabel with default styles.
 
-- **Drag** - DragView
+- **Drag** - Drag
 
-  Draggable component using Shape primitive and Gesture modifier.
+  Draggable component using shape primitive and gesture modifier.
 
 
 ## Adding New Components

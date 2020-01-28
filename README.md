@@ -4,13 +4,19 @@ Recipes for common components and interactions implemented in SwiftUI.
 ## Components
 
 - **Simple Text** - SimpleText
-
   Basic Text component. Similar to a basic UILabel with default styles.
 
-- **Drag** - Drag
+- **Input Text Field** - InputTextField
+  Dynamic text field.
 
+- **Drag** - Drag
   Draggable component using shape primitive and gesture modifier.
 
+- **DragSpring** - DragSpring
+  Draggable component using shape primitive and gesture modifier.
+
+- **PopUp** - PopUp
+  Button with submenu buttons.
 
 ## Adding New Components
 

@@ -9,14 +9,24 @@
 import SwiftUI
 
 struct RecipeList: View {
+    @State var showAlert = false
+
     var body: some View {
         NavigationView {
-            List(RecipeType.allCases) { recipeType in
-                NavigationLink(destination: RecipeContainer(recipeType: recipeType)) {
-                    Text(recipeType.title)
+            List(Recipe.allCases) { recipe in
+                NavigationLink(destination: RecipeContainer(recipe: recipe)) {
+                    Text(recipe.title)
                 }
             }
-            .navigationBarTitle(Text("Recipes"))
+            .navigationBarTitle(Text("Recipes 🌮"))
+            .navigationBarItems(trailing: Button(action: { self.showAlert.toggle() }) {
+                Image(systemName: "info.circle")
+                    .font(.system(size: 24, weight: .light))
+            })
+            .alert(isPresented: $showAlert) {
+                Alert(title: Text("SwiftUI Cookbook 👨🏻‍🍳"), message: Text(" \nversion: \(Bundle.main.releaseVersionNumber)"),
+                      dismissButton: .default(Text("Okay")))
+            }
         }
     }
 }

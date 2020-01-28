@@ -1,9 +1,9 @@
 //
 //  InputTextField.swift
-//  SwiftUICookbook
+//  MobileLabSwiftUICookbook
 //
 //  Created by Sebastian Buys on 6/13/19.
-//  Copyright © 2019 Sebastian Buys. All rights reserved.
+//  Copyright © 2020 Mobile Lab. All rights reserved.
 //
 
 import SwiftUI

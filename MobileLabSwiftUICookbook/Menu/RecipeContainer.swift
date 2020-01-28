@@ -9,19 +9,19 @@
 import SwiftUI
 
 struct RecipeContainer: View {
-    let recipeType: RecipeType
+    let recipe: Recipe
     
     @State var showAlert = false
     
     var body: some View {
-        recipeType.makeView()
-            .navigationBarTitle(Text(recipeType.title), displayMode: .inline)
+        recipe.makeView()
+            .navigationBarTitle(Text(recipe.title), displayMode: .inline)
             .navigationBarItems(trailing: Button(action: { self.showAlert.toggle() }) {
                 Image(systemName: "info.circle")
                     .font(.system(size: 24, weight: .light))
             })
             .alert(isPresented: $showAlert) {
-                Alert(title: Text(""), message: Text(recipeType.description), dismissButton: .default(Text("Okay")))
+                Alert(title: Text(""), message: Text(recipe.description), dismissButton: .default(Text("Okay")))
             }
     }
 }

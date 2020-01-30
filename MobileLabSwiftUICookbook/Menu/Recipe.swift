@@ -14,7 +14,7 @@ enum Recipe: String, CaseIterable, Identifiable {
     case inputTextField
     case drag
     case dragSpring
-    case slider
+    case customizedSlider
     case popUp
     
     // Associated data for recipe (title, description, { AnyView(view) })
@@ -41,10 +41,10 @@ enum Recipe: String, CaseIterable, Identifiable {
                         "Draggable component using spring animation.",
                         { AnyView(DragSpring()) })
             
-        case .slider:
+        case .customizedSlider:
             return Data("Slider",
                         "Customized slider using shape, gesture and stack.",
-                        { AnyView(Slider()) })
+                        { AnyView(CustomizedSlider()) })
             
         case .popUp:
             return Data("Pop Up",

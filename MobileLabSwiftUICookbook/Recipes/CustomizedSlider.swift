@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct Slider: View {
+struct CustomizedSlider: View {
     
     // State variables
     /// A variable that controls location changes
@@ -98,6 +98,6 @@ struct Slider: View {
 
 struct Slider_Previews : PreviewProvider {
     static var previews: some View {
-        Slider()
+        CustomizedSlider()
     }
 }
